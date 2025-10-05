@@ -17,7 +17,6 @@ class TestFindDuplicate(unittest.TestCase):
         self.assertEqual(m.findDuplicateAlternative([1, 2, 3, 3, 3, 4, 5]), 3)
 
     def test_no_dupe(self):
-        # Spec guarantees a dup, but this keeps behavior explicit.
         self.assertIsNone(m.findDuplicate([1, 2, 3, 4]))
         self.assertIsNone(m.findDuplicateAlternative([1, 2, 3, 4]))
 
